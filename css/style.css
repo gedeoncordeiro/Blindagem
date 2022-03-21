@@ -384,9 +384,19 @@ footer .creditos{
 
 /*Trabalhando a responsividade*/
 @media(max-width: 576px){
-    nav ul li{
-        display: none;
+    nav {
+        display: flex;
+        flex-direction: column;
     }
+    nav ul button{
+        margin-left: 0;
+        padding: 8px 30px;
+    }
+    .header-bloco{
+        margin-top: 10px;
+    }
+
+
     .header-bloco img{
         width: 50%;
         position: absolute;
@@ -394,16 +404,16 @@ footer .creditos{
         left: 15%;
     }
     section .filtro-caixa{
-        width: 390px;
-        padding: 0x 10px;
+        width: 340px;
+        padding: 0px 10px;
     }
     .entradaBuscas{
-        max-width: 700px;
-        min-width: 240px;
+        max-width: 215px;
+        min-width: 120px;
     }
     .btnBuscas{
-        max-width: 150px;
-        min-width: 80px;
+        max-width: 50px;
+        min-width: 90px;
     }
     .sobre{
         margin-top: 100px;
@@ -415,5 +425,37 @@ footer .creditos{
         flex-direction: column;
         height: 100%;
     }
+    .esquerda{
+        display: none;
+    }
+
+    .direita{
+        width: 90%;
+    }
+    .direita p{
+        width: 100%;
+        margin: 0;
+        text-align: left;
+    }
+    .recursos{
+        height: 100%;
+    }
+    .recursos-blocos{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    footer{
+        height: 100%;
+    }
+    footer .principal{
+        height: 100%;
+    }
+    .links-footer{
+        flex-direction: column;
+        padding: 10%;
+    }
+    
+
 
 }
