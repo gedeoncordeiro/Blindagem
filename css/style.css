@@ -161,6 +161,7 @@ section .filtro-caixa{
 
 .btnBuscas:hover{
     background: #010a1a;
+    transform: scale(1.1);
 
 }
 .titulo-catalogo{
@@ -222,6 +223,7 @@ section .caixa-item{
 
 .caixa-item button:hover{
     background: #010a1a;
+    transform: scale(1.1);
 }
 
 /*Seção sobre*/
@@ -359,11 +361,17 @@ footer .principal{
 .contato{
     color: var(--dourado);
     height: 100%;
-    min-height: 100px
+    min-height: 100px;
 }
+
 
 .links-footer h4{
     margin-bottom: 10px;
+}
+
+.links-footer h6:hover{
+    cursor: pointer;
+    color: white;
 }
 
 .principal .redes-sociais img{
@@ -381,6 +389,11 @@ footer .creditos{
     justify-content: center;
     font-size: .8rem;
 }
+
+footer img:hover{
+    transform: scale(1.1);
+}
+
 
 /*Trabalhando a responsividade*/
 @media(max-width: 576px){
@@ -445,6 +458,8 @@ footer .creditos{
         display: flex;
         flex-direction: column;
     }
+
+
     footer{
         height: 100%;
     }
